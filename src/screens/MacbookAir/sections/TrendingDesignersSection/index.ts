@@ -1,0 +1,1 @@
+export { TrendingDesignersSection } from "./TrendingDesignersSection";

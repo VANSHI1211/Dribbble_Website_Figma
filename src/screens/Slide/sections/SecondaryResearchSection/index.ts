@@ -1,0 +1,1 @@
+export { SecondaryResearchSection } from "./SecondaryResearchSection";

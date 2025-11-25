@@ -1,0 +1,105 @@
+module.exports = {
+  content: [
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+    "app/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "bg-color-1": "var(--bg-color-1)",
+        "bg-color-2": "var(--bg-color-2)",
+        "bg-color-4": "var(--bg-color-4)",
+        "bg-color-5": "var(--bg-color-5)",
+        "french-rose-dribbble-pink": "var(--french-rose-dribbble-pink)",
+        "gray-color-white": "var(--gray-color-white)",
+        "grey-color-black": "var(--grey-color-black)",
+        "profile-icon": "var(--profile-icon)",
+        "stroke-1": "var(--stroke-1)",
+        "stroke-2": "var(--stroke-2)",
+        "text-color-1": "var(--text-color-1)",
+        "text-color-2": "var(--text-color-2)",
+        "text-color-3": "var(--text-color-3)",
+        "text-color-4": "var(--text-color-4)",
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      fontFamily: {
+        "body-bold-12": "var(--body-bold-12-font-family)",
+        "body-bold-16": "var(--body-bold-16-font-family)",
+        "body-medium-12": "var(--body-medium-12-font-family)",
+        "body-medium-15": "var(--body-medium-15-font-family)",
+        "body-medium-16": "var(--body-medium-16-font-family)",
+        "body-regular-12": "var(--body-regular-12-font-family)",
+        "body-regular-14": "var(--body-regular-14-font-family)",
+        "body-regular-16": "var(--body-regular-16-font-family)",
+        "body-regular-20": "var(--body-regular-20-font-family)",
+        "body-semibold-16": "var(--body-semibold-16-font-family)",
+        "body-semibold-20": "var(--body-semibold-20-font-family)",
+        "body-semibold-48": "var(--body-semibold-48-font-family)",
+        sans: [
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+    container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+  },
+  plugins: [],
+  darkMode: ["class"],
+};
